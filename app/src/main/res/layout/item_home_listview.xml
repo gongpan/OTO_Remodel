@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/home_list_main_img"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_default_adimage"/>
+
+    <TextView
+        android:id="@+id/home_list_txt_zk"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@color/password_tab_color2"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="0.0折"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font3"
+        />
+
+    <TextView
+        android:id="@+id/home_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_list_main_img"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="商店名称"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/font2"/>
+
+    <RatingBar
+        android:id="@+id/home_list_ratingBar"
+        style="@style/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/rat_height"
+        android:layout_alignBottom="@id/home_list_item_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"/>
+
+    <TextView
+        android:id="@+id/home_list_item_introduce"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_list_item_title"
+        android:layout_below="@id/home_list_item_title"
+        android:layout_marginTop="6dp"
+        android:text="商店介绍商店介绍商店介绍商店介绍商店介绍"
+        android:textColor="#999999"
+        android:textSize="@dimen/font1"/>
+
+    <TextView
+        android:id="@+id/home_list_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/home_list_ratingBar"
+        android:layout_alignTop="@id/home_list_item_introduce"
+        android:layout_below="@id/home_list_ratingBar"
+        android:text="0.00元"
+        android:textColor="@color/main_item_money_color"
+        android:textSize="@dimen/font1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/home_list_item_money"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/home_list_item_money"
+        android:text="人均:"
+        android:textColor="@color/main_item_money_color"
+        android:textSize="@dimen/font1"/>
+
+    <TextView
+        android:id="@+id/home_list_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_list_item_title"
+        android:layout_alignRight="@id/home_list_item_money"
+        android:layout_below="@id/home_list_item_introduce"
+        android:layout_marginTop="2dp"
+        android:gravity="right"
+        android:text="车公庙"
+        android:textColor="@color/main_item_money_color"
+        android:textSize="@dimen/font1"/>
+</RelativeLayout>

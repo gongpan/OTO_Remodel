@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="top_bottom_bg">#222222</color>
+    <color name="mycenter_item_pressed_bg">#4DD0E1</color>
+
+
+    <!--导入colors start -->
+    <color name="transparent">#00000000</color>
+    <color name="titlebar_bg">#222222</color>
+    <color name="app_bg">#F5F5F5</color>
+    <color name="login_color">#aaaaaa</color>
+    <color name="devide_line">#E9E9E9</color>
+    <color name="code_but_bg">#EE892F</color>
+    <color name="register_but_color">#D7000F</color>
+    <color name="password_tab_color">#6D6D6D</color>
+    <color name="password_tab_color2">#D7000F</color>
+    <color name="tab_divide_color">#E5E5E5</color>
+    <color name="gird_txt_color">#6C6C6C</color>
+    <color name="main_txt_color">#333333</color>
+    <color name="main_item_money_color">#666666</color>
+    <color name="tab_menu_color">#777777</color>
+    <color name="pop_but_border">#dddddd</color>
+    <color name="gray1">#e6e6e6</color>
+    <color name="color_99">#999999</color>
+    <color name="F0F0F0">#F0F0F0</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="toolbar">#222222</color>
+    <color name="black">#000</color>
+    <color name="gray">#999999</color>
+    <color name="grayBack">#eee</color>
+    <color name="subFont">#eaeaea</color>
+    <color name="activityBack">#F5F5F5</color>
+    <color name="fontList">#333</color>
+    <color name="redLine">#D00000</color>
+    <color name="zhe">#969696</color>
+    <color name="fontGray">#999999</color>
+    <color name="fontGrayDeep">#666</color>
+    <color name="fontCancel">#aaa</color>
+    <color name="light">#fff</color>
+    <color name="button">#D7020F</color>
+    <color name="btn_phont">#F95B50</color>
+    <color name="transmit">#00000000</color>
+    <color name="umeng_socialize_comments_bg">#F4F4F4</color>
+    <color name="umeng_socialize_color_group">#2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#333333</color>
+    <color name="umeng_socialize_list_item_bgcolor">#FFFFFF</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+    <color name="umeng_socialize_text_time">#999999</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="umeng_socialize_text_friends_list">#959696</color>
+    <color name="umeng_socialize_text_share_content">#666666</color>
+    <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
+    <color name="umeng_socialize_text_ucenter">#595959</color>
+    <color name="umeng_socialize_edit_bg">#C4C4C4</color>
+    <color name="umeng_socialize_grid_divider_line">#F8F8F8</color>
+
+    <!--导入colors end -->
+</resources>

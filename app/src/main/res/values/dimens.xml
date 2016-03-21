@@ -1,0 +1,26 @@
+<resources> 
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font0">10sp</dimen>
+    <dimen name="font1">12sp</dimen>
+    <dimen name="font2">14sp</dimen>
+    <dimen name="font3">16sp</dimen>
+    <dimen name="font4">18sp</dimen>
+    <dimen name="font5">20sp</dimen>
+    <dimen name="font6">22sp</dimen>
+    <dimen name="font7">24sp</dimen>
+    <dimen name="titlebar_height">44dp</dimen>
+    
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="line">15dp</dimen>
+    <!--【订单详情】-->
+    <dimen name="headHeight">102dp</dimen>
+    <dimen name="xindouji">16sp</dimen>
+    <dimen name="comment_img_width">52dp</dimen>
+    <dimen name="comment_img_width2">64dp</dimen>
+    <dimen name="rat_height">30px</dimen>
+    <dimen name="h2">0dp</dimen>
+
+    <dimen name="next_img_width_height">28dp</dimen>
+</resources>

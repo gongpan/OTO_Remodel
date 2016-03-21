@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="rat_height">60px</dimen>
+    <dimen name="h2">2dp</dimen>
+</resources>

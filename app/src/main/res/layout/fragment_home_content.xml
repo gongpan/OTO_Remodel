@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/home_swipe_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/home_content_banner"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:canLoop="true"/>
+
+            <TextView
+                android:id="@+id/home_content_xfc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_content_banner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="XFC最新价格："
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/home_content_xfc_tv_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/home_content_xfc_tv"
+                android:layout_alignTop="@+id/home_content_xfc_tv"
+                android:layout_toRightOf="@id/home_content_xfc_tv"
+                android:text="-0.00"
+                android:textColor="#D7000F"
+                android:textSize="16sp"/>
+
+            <com.first.fubao.oto.widget.GridViewForScrollView
+                android:id="@+id/home_content_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_content_xfc_tv"
+                android:background="#EEEEEE"
+                android:gravity="center"
+                android:horizontalSpacing="0.8dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:paddingBottom="1dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.8dp"/>
+
+            <TextView
+                android:id="@+id/home_content_listview_tilte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_content_gridview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:text="为您推荐"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/home_content_listview_tilte"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@id/home_content_listview_tilte"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_bg_line2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/home_content_listview_tilte"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/home_content_listview_tilte"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_bg_line1"/>
+
+            <com.first.fubao.oto.widget.ListViewForScrollView
+                android:id="@+id/home_content_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_content_listview_tilte"
+                android:layout_centerHorizontal="true"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/app_bg"
+                android:dividerHeight="18dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

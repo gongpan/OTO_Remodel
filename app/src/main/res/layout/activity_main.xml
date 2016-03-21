@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/top_bottom_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <RelativeLayout
+            android:id="@+id/main_tab_homePager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_tab_homePager_iv"
+                style="@style/main_tab_iv"
+                android:src="@drawable/main_tab_img_home_pager"/>
+
+            <TextView
+                android:id="@+id/main_tab_homePager_tv"
+                style="@style/main_tab_text"
+                android:layout_below="@+id/main_tab_homePager_iv"
+                android:text="首页"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab_business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_tab_business_iv"
+                style="@style/main_tab_iv"
+                android:src="@drawable/main_tab_img_business"/>
+
+            <TextView
+                android:id="@+id/main_tab_business_tv"
+                style="@style/main_tab_text"
+                android:layout_below="@+id/main_tab_business_iv"
+                android:text="商家"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab_mycenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_tab_mycenter_iv"
+                style="@style/main_tab_iv"
+                android:src="@drawable/main_tab_img_mycenter"/>
+
+            <TextView
+                android:id="@+id/main_tab_mycenter_tv"
+                style="@style/main_tab_text"
+                android:layout_below="@+id/main_tab_mycenter_iv"
+                android:text="个人"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_container"/>
+
+</RelativeLayout>

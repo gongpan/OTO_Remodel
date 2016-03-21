@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/top_bottom_bg"
+    android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+
+    <RelativeLayout
+        android:id="@+id/home_place_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/home_place_bg">
+
+        <TextView
+            android:id="@+id/home_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="定位城市"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/home_img_more_place"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/home_tv_city"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/nav_more"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="186dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/home_et_search"
+            android:layout_width="186dp"
+            android:layout_height="24dp"
+            android:background="@drawable/top_et_search_bg"
+            android:hint="请输入商家名称"
+            android:paddingLeft="14dp"
+            android:paddingRight="22dp"
+            android:singleLine="true"
+            android:textColorHint="#aaaaaa"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/nav_search"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home_img_sys"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/nav_saoyisao"
+        android:visibility="visible"/>
+
+</RelativeLayout>

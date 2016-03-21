@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="main_tab_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/main_tab_text_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="main_tab_iv">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_full</item>
+        <item name="android:minHeight">@dimen/rat_height</item>
+        <item name="android:maxHeight">@dimen/rat_height</item>
+    </style>
+
+    <style name="popupAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ######## top start ######## -->
+<RelativeLayout
+    android:id="@+id/business_top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/top_bottom_bg"
+    android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x480"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/business_et_search"
+            android:layout_width="@dimen/x500"
+            android:layout_height="24dp"
+            android:background="@drawable/top_et_search_bg"
+            android:hint="请输入商家名称"
+            android:paddingLeft="14dp"
+            android:paddingRight="22dp"
+            android:singleLine="true"
+            android:textColorHint="#aaaaaa"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/nav_search"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/business_iv_open_map"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/nav_locationn"/>
+
+</RelativeLayout>
+<!-- ######## top end ######## -->

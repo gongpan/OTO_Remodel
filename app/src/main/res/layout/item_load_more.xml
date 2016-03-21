@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <!--点击加载更多-->
+    <LinearLayout
+        android:id="@+id/item_loadmore_click_load"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="点击加载更多"
+            android:textColor="@color/main_txt_color"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <!-- loading -->
+    <LinearLayout
+        android:id="@+id/item_loadmore_loading"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminateDrawable="@drawable/progress_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="正在加载更多数据..."
+            android:textColor="@color/main_txt_color"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <!-- 加载失败 -->
+    <LinearLayout
+        android:id="@+id/item_loadmore_error"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="加载失败，点击重试"
+            android:textColor="@color/main_txt_color"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <!-- 没有更多数据了 -->
+    <LinearLayout
+        android:id="@+id/item_loadmore_empty"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="没有更多数据了"
+            android:textColor="@color/main_txt_color"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</LinearLayout>
