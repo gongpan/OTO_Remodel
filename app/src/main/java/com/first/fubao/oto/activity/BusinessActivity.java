@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.first.fubao.oto.R;
 import com.first.fubao.oto.controller.BusinessController;
+import com.first.fubao.oto.utils.Logger;
 
 /**
  * @创建者：杨长福
@@ -22,6 +23,7 @@ public class BusinessActivity extends Activity {
     private EditText mEtSearch;
     private ImageView mImgOpenMap;
     private BusinessController mController;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class BusinessActivity extends Activity {
         mContainerView.addView(mController.getRootView());
 
         mEtSearch.setInputType(InputType.TYPE_NULL);
+        Logger.d("tag","faf");
 
         initTopView();
     }
